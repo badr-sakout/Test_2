@@ -13,7 +13,7 @@ public class Main {
         service.setUser(1, 5000);
         service.setUser(2, 10000);
 
-        service.bookRoom(1, 2, sdf.parse("30/06/2026"), sdf.parse("07/07/2026")); // invalid because use 1 has only 5000 , 14000 is needed
+        service.bookRoom(1, 2, sdf.parse("30/06/2026"), sdf.parse("07/07/2026")); // invalid because user 1 has only 5000 , 14000 is needed
         service.bookRoom(1, 2, sdf.parse("07/07/2026"), sdf.parse("30/06/2026")); // invalid date range
         service.bookRoom(1, 1, sdf.parse("07/07/2026"), sdf.parse("08/07/2026")); // success
         service.bookRoom(2, 1, sdf.parse("07/07/2026"), sdf.parse("09/07/2026")); // Room already booked by user 1
