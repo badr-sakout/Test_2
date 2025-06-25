@@ -9,6 +9,6 @@ A screenshot of printAllUsers(...)
 
 1/ it's not the recommended approach because it leads to tight coupling and also violates SOLID princples , specifically single responsibility and open/closed principles.
 
-2/ another way would be to allow updating room data directly, even if bookings exist. However, this can cause inconsistencies,
+2/ another way would be to allow updating room data directly, even if bookings exist. but this can cause inconsistencies,
    like changing the price or type after a booking was made. The current approach is better because it preserves booking history and ensures data integrity.
 
