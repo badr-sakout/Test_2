@@ -8,8 +8,6 @@ public class Room {
         this.type = type;
         this.pricePerNight = pricePerNight;
     }
-
-    public int getRoomNumber() { return roomNumber; }
     public int getPricePerNight() { return pricePerNight; }
 
     @Override
